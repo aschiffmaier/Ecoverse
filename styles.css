@@ -1,0 +1,482 @@
+/* 🌎 Global Reset for Consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: lightgreen;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* 🖼️ Header Image */
+  #header-img {
+    display: block;
+    margin: 20px auto;
+    width: 50%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* 📝 Headings */
+  h1, h2, h3 {
+    padding: 15px 20px;
+    margin: 10px 0;
+  }
+  
+  h1 {
+    border-bottom: 4px solid yellow;
+    text-align: center;
+  }
+  
+  h2 {
+    border-bottom: 3px solid black;
+    margin-bottom: 15px;
+  }
+  
+  h3 {
+    margin-bottom: 10px;
+  }
+  
+  /* 📜 Text Content */
+  p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  ul {
+    padding-left: 20px;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  /* 🎛️ Buttons */
+  button {
+    font-weight: bold;
+    border: 2px solid black;
+    padding: 12px 18px;
+    margin: 10px 5px;
+    background-color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #ddd;
+  }
+  
+  /* 🎯 Flexbox Header */
+  .header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    margin-top: 20px;
+    gap: 20px;
+  }
+  
+  .header-item img {
+    width: 100px;
+    height: auto;
+  }
+  
+  /* 🗓️ Schedule Cards */
+  .schedule-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 60px;
+  }
+  
+  .schedule-item {
+    flex: 1 1 300px;
+    max-width: 320px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+  }
+  
+  .schedule-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .schedule-item img:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+  
+  .schedule-item h3 {
+    min-height: 60px;
+    margin-bottom: 10px;
+  }
+  
+  /* 📬 RSVP Section */
+  .rsvp-layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+    align-items: flex-start;
+  }
+  
+  .rsvp-invite {
+    flex: 1 1 45%;
+    padding-right: 10px;
+  }
+  
+  .rsvp-invite h2 {
+    font-size: 1.5em;
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+  
+  .rsvp-invite p {
+    font-size: 1em;
+    margin-bottom: 25px;
+  }
+  
+  .rsvp-invite h3 {
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+  
+  #rsvp-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+  }
+  
+  #rsvp-list li {
+    background: white;
+    border: 1px solid #333;
+    padding: 8px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+  }
+  
+  .rsvp-form {
+    flex: 1 1 45%;
+    padding-left: 10px;
+  }
+  
+  #rsvp-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  #rsvp-form label {
+    font-weight: bold;
+    font-size: 0.95rem;
+  }
+  
+  #rsvp-form input,
+  #rsvp-form select,
+  #rsvp-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #333;
+    border-radius: 6px;
+    background: white;
+  }
+  
+  #rsvp-form textarea {
+    height: 80px;
+    resize: vertical;
+  }
+  
+  #rsvp-form button {
+    padding: 12px;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  #rsvp-form button:hover {
+    background-color: #eee;
+  }
+  
+  /* 🎥 Video Section */
+ 
+/* 🎥 Video Section */
+#video {
+    width: 100%;
+    margin-top: 20px;
+    padding: 0 0 40px 0;
+    text-align: center;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    line-height: 0; /* REMOVE sneaky top whitespace caused by block line height */
+  }
+  
+  #video h2 {
+    display: inline-block;
+    margin: 0;
+    padding: 10px 0;
+    font-size: 1.5em;
+    line-height: 1.3;
+    border: none;
+  }
+  
+  
+  /* 📚 References Section */
+  .references-section {
+    margin-top: 60px;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .references-section h2 {
+    border-bottom: 3px solid #000;
+    display: inline-block;
+    padding-bottom: 8px;
+    margin-bottom: 30px;
+  }
+  
+  .reference-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .reference-link {
+    text-decoration: none;
+    color: #000;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    max-width: 100%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: background 0.3s ease;
+  }
+  
+  .reference-link:hover {
+    background-color: #f4f4f4;
+  }
+  
+  .reference-link h3 {
+    margin-bottom: 8px;
+    color: #1a0dab;
+    text-decoration: none;
+    border: none;
+    padding-bottom: 0;
+  }
+  
+  .reference-link p {
+    color: #333;
+    margin: 0;
+  }
+  
+  /* 🌙 Dark Mode */
+  .dark-mode {
+    background-color: #111;
+    color: white;
+  }
+  
+  .dark-mode h1,
+  .dark-mode h2,
+  .dark-mode h3,
+  .dark-mode p,
+  .dark-mode ul,
+  .dark-mode li {
+    color: white;
+  }
+  
+  .dark-mode a {
+    color: #00ffff;
+  }
+  
+  .dark-mode .navbar,
+  .dark-mode .site-footer {
+    background-color: #4CAF50;
+  }
+  
+  .dark-mode #rsvp-form input,
+  .dark-mode #rsvp-form select,
+  .dark-mode #rsvp-form textarea {
+    background-color: #333;
+    color: white;
+    border: 1px solid #666;
+  }
+  
+  .dark-mode #rsvp-form button {
+    background-color: #444;
+    color: white;
+    border: 2px solid white;
+  }
+  
+  .dark-mode #rsvp-form button:hover {
+    background-color: #666;
+  }
+  
+  .dark-mode #rsvp-list li {
+    background: #333;
+    color: white;
+    border: 1px solid #666;
+  }
+  
+  .dark-mode .reference-link {
+    background-color: #222;
+    color: white;
+    border: 1px solid #555;
+  }
+  
+  .dark-mode .reference-link h3 {
+    color: #00ffff;
+  }
+  
+  .dark-mode .reference-link p {
+    color: #ddd;
+  }
+
+  /* 🌙 Dark Mode: Schedule Cards */
+.dark-mode .schedule-item {
+    background-color: #222;
+    color: white;
+    border: 1px solid #555;
+  }
+  
+  .dark-mode .schedule-item h3,
+  .dark-mode .schedule-item p {
+    color: white;
+  }
+  
+  .dark-mode .schedule-item img {
+    filter: brightness(100%);
+  }
+  
+  
+  /* ⬇️ Footer */
+  .site-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+  
+  /* 📱 Responsive Layout */
+  @media screen and (max-width: 768px) {
+    .rsvp-layout {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .rsvp-invite,
+    .rsvp-form {
+      width: 100%;
+      padding: 0;
+    }
+  
+    #video iframe {
+      height: 240px;
+    }
+  
+    .reference-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  /* 🎉 Modal Styling */
+.modal {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    max-width: 400px;
+    width: 80%;
+    animation: scaleUp 0.5s ease;
+  }
+  
+  .modal-img {
+    width: 100px;
+    margin-bottom: 15px;
+    transition: transform 0.6s ease-in-out;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  @keyframes scaleUp {
+    from { transform: scale(0.5); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+  
+  .reduce-motion .modal-content {
+    animation: none !important;
+  }
+  
+  .reduce-motion .modal-img {
+    transition: none !important;
+  }
+
+  @keyframes soulblink {
+    0% { box-shadow: 0 0 0px rgba(255, 255, 255, 0.5); }
+    50% { box-shadow: 0 0 20px rgba(255, 255, 255, 0.9); }
+    100% { box-shadow: 0 0 0px rgba(255, 255, 255, 0.5); }
+  }
+  
+  .soulblink {
+    animation: soulblink 1s ease-in-out infinite;
+  }
+  
+  
+
+  

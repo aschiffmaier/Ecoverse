@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ally's Ecoverse Website</title>
+
+  <!-- 🌍 Favicon -->
+  <link rel="icon" href="./img/favicon.png" />
+
+  <!-- 🎨 CSS -->
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- 🔝 Navigation Bar -->
+  <div class="navbar">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#schedule">Schedule</a></li>
+    </ul>
+  </div>
+
+  <!-- 🌓 Theme + Motion Toggle -->
+  <div class="theme-button-container">
+    <button id="theme-button">Toggle Dark Mode</button>
+    <button id="motion-toggle">Reduce Motion</button>
+  </div>
+
+  <!-- 🌎 Header -->
+  <div class="header-container">
+    <div class="header-item">
+      <img id="header-img" src="small-blue-planet-field-grass-concept-day-earth-312956665.webp" alt="Planet on field with grass" />
+    </div>
+    <div class="header-item">
+      <h1>Ecoverse: Earth and Space</h1>
+      <h3>Engineering Better Futures</h3>
+      <button type="button">Geology Division</button>
+      <button type="button">Aerospace Division</button>
+    </div>
+  </div>
+
+  <!-- 📝 About -->
+  <h2 id="about">About the Event</h2>
+  <p>The Ecoverse website educates users on climate change and sustainability while showcasing smart city innovations. It's a portal for action and ideas shaping the eco-future.</p>
+  <h4><strong>Innovate. Sustain. Transform Our Future.</strong></h4>
+  <br>
+  <ul>
+    <li><b>Smart Energy Grids:</b> <i>Explore how renewable grids boost efficiency.</i></li>
+    <li><b>Water Conservation Tech:</b> <i>Discover tools protecting water sources.</i></li>
+    <li><b>Green Urban Design:</b> <i>Sustainability in public space transformation.</i></li>
+  </ul>
+
+  <!-- 📅 Schedule -->
+  <h2 id="schedule">Event Schedule</h2>
+  <div class="schedule-container">
+    <div class="schedule-item">
+      <a href="https://www.esa.int/Applications/Observing_the_Earth/Space_for_our_climate/Monitoring_climate_change_from_space2" target="_blank">
+        <img src="Monitoring_our_changing_planet_pillars.png" alt="ESA Climate Monitoring" class="clickable-img" />
+      </a>
+      <h3>Satellite-Based Climate Monitoring</h3>
+      <p>Track global climate indicators like temperature, vegetation, and carbon levels via satellite.</p>
+    </div>
+
+    <div class="schedule-item">
+      <a href="https://arc.aiaa.org/doi/10.2514/6.2025-1105" target="_blank">
+        <img src="Space-Debris-2.jpg" alt="Orbital debris cleanup" class="clickable-img" />
+      </a>
+      <h3>Space Debris Cleanup Solutions</h3>
+      <p>Robotic arms, magnets, and tethers engineered to remove debris orbiting Earth.</p>
+    </div>
+
+    <div class="schedule-item">
+      <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9920607/" target="_blank">
+        <img src="greenhouse.jpg" alt="Greenhouse innovation" class="clickable-img" />
+      </a>
+      <h3>Bioplastics & Greenhouse Innovation</h3>
+      <p>Biodegradable plastics and renewable construction materials in modern agriculture.</p>
+    </div>
+
+    <div class="schedule-item">
+      <a href="https://www.esri.com/about/newsroom/publications/wherenext/using-gis-for-environmental-monitoring/" target="_blank">
+        <img src="gis-earth-overlay.jpg" alt="GIS environmental mapping" class="clickable-img" />
+      </a>
+      <h3>GeoMapping for Environmental Resilience</h3>
+      <p>How GIS tech supports infrastructure planning and crisis response.</p>
+    </div>
+  </div>
+
+  <!-- 📬 RSVP Section -->
+  <section id="rsvp">
+    <div class="rsvp-layout">
+      <div class="rsvp-invite">
+        <h2 id="greeting">Want to join our sustainability hackathon?</h2>
+        <p>Tell us your name, location, and which division you're excited about 🌍 🚀</p>
+        <h3>Guest List</h3>
+        <p id="rsvp-count">Total RSVPs: 0</p>
+        <ul id="rsvp-list"></ul>
+      </div>
+
+      <div class="rsvp-form">
+        <h2>RSVP for the Event</h2>
+        <form id="rsvp-form">
+          <label for="full-name">Full Name:</label>
+          <input type="text" id="full-name" required />
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" required />
+
+          <label for="location">Your State/Country:</label>
+          <input type="text" id="location" required />
+
+          <label for="division">Division of Interest:</label>
+          <select id="division" required>
+            <option value="">--Select--</option>
+            <option value="Geology">Geology 🌍</option>
+            <option value="Aerospace">Aerospace 🚀</option>
+          </select>
+
+          <label for="message">Message (Optional):</label>
+          <textarea id="message"></textarea>
+
+          <button id="submit-rsvp" type="submit">Submit RSVP</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🎥 Video Section -->
+  <section id="video">
+    <h2>Watch: Sustainable Tech in Action</h2>
+    <div>
+      <iframe width="80%" height="400" src="https://www.youtube.com/embed/RNhbqQefPSg" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- 📚 References -->
+  <section class="references-section">
+    <h2>References</h2>
+    <div class="reference-list">
+      <a class="reference-link" href="https://www.codepath.org" target="_blank">
+        <h3>CodePath</h3>
+        <p>Learn web development and more with CodePath.org</p>
+      </a>
+      <a class="reference-link" href="https://climate.nasa.gov/" target="_blank">
+        <h3>NASA Climate</h3>
+        <p>Explore how NASA monitors and addresses climate change</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- 🦶 Site Footer -->
+  <footer class="site-footer">
+    <p>© 2025 Ally's Ecoverse | Created with 💚 in Web101</p>
+  </footer>
+
+  <!-- 🎉 Modal -->
+<div id="rsvp-modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="close-modal" class="close-btn">&times;</span>
+      <img src="celebrate.gif" class="modal-img" alt="Astronaut celebration" />
+      <p id="modal-message"></p>
+    </div>
+  </div>
+  
+
+  <!-- 🎊 Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+/* 
+  Modified from:
+  http://meyerweb.com/eric/tools/css/reset/ 
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+input {
+	display: block;
+}
+
+.header-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	text-align: left;
+	margin-top: 20px;
+	gap: 20px;
+  }
+  
+  .header-item img {
+	width: 100px;
+	height: auto;
+  }
+  
+  .navbar ul {
+	list-style-type: none;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	margin-bottom: 20px;
+	background-color: #4CAF50;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	z-index: 1000;
+  }
+  
+  .navbar ul li {
+	margin: 0 15px;
+  }
+  
+  .navbar ul li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+  }
+  
+  .navbar ul li a:hover {
+	background-color: #45a049;
+	border-radius: 4px;
+  }
+  
+  
+  .schedule-container {
+	display: flex;
+	justify-content: space-around;
+	gap: 30px;
+	margin-top: 60px;
+  }
+  
+  .schedule-item {
+	flex: 1;
+	background-color: #f9f9f9;
+	padding: 10px;
+	border-radius: 8px;
+	text-align: center;
+  }
+
+  
+  
